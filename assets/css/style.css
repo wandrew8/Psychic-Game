@@ -1,0 +1,53 @@
+body {
+    background-image: url("../images/morocco-blue.png")
+}
+
+header {
+    background-color: #fff;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+h1 {
+    font-family: 'Skranji', cursive;
+    font-size: 8em;
+    text-align: center;
+    margin: 2%;
+    color: #3d3d3d;
+    opacity: 1;
+    
+}
+
+h2 {
+    font-family: 'Manjari', sans-serif;
+    font-size: 3em;
+    background-color: #3d3d3d;
+    text-align: center;
+    color: #fff;
+    padding: 1%;
+    opacity: 1;
+    border-radius: 8px;
+}
+
+p, span {
+    padding: 2%;
+    font-size: 1.5em;
+    font-family: 'Manjari', sans-serif;
+
+}
+
+
+.data {
+    height: 10em;
+    background-color: #fff;
+    text-align: center;
+    border: 5px solid #3d3d3d;
+    outline: 5px solid #fff;
+    margin: 2% 0;
+    
+}
+
+.row {
+    align-content: center;
+}
+

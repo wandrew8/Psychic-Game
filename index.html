@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Manjari|Skranji:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -13,8 +14,51 @@
 </head>
 
 <body>
-    
-    <script src="assets/javascript/game.js"></script>
+    <div class="container-fluid">
+        <header>
+            <div class="container main">
+                <h1>The Psychic Game</h1>
+                <h2 class="lead">Can you guess the letter that I'm thinking of? Guess a letter on your keyboard to see
+                    if
+                    our minds are connected.</h2>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+
+                <div class="col-md-4 data">
+                    <p>Wins:</p>
+                    <p id="wins"></p>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4 data">
+                    <p>Losses:</p>
+                    <p id="losses"></p>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-4 data">
+                    <p>Guesses Left:</p>
+                    <p id="remaining"></p>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4 data">
+                    <p>Your Guesses so far:</p>
+                    <p id="guessed"></p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+
+
+
+        <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
