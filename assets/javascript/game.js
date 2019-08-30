@@ -28,24 +28,25 @@ document.onkeyup = function (event) {
     //Handles correct guesses
     if (userGuess === computerLetter) {
         wins++;
+        guessesRemaining = 9;
+        computerLetter = computersArray[Math.floor(Math.random() * computersArray.length)];
         console.log("Now the computer guessed " + computerLetter);
     } else {
         guessesRemaining--;
         lettersGuessed.push(userGuess);
-        lettersGuessedText.textContent = userGuess;
-    }
+        lettersGuessedText.textContent = lettersGuessed + " ";
 
     //Resets game when guesses run out
     if (guessesRemaining === 0) {
         losses++;
         guessesRemaining = 9;
+        computerLetter = computersArray[Math.floor(Math.random() * computersArray.length)];
         console.log("Now the computer guessed " + computerLetter);
+        lettersGuessed = [];
     }
 
     winsText.textContent = wins;
     lossesText.textContent = losses;
     guessesRemainingText.textContent = guessesRemaining;
 }
-
-//Tried to push "userGuess" to "lettersGuessed" array to show multiple guessed letters
-//Computer pulls a random letter, but retains the same letter for each round
+}
